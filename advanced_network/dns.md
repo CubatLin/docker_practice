@@ -25,5 +25,5 @@ tmpfs on /etc/resolv.conf type tmpfs ...
 新增 DNS 伺服器到容器的 `/etc/resolv.conf` 中，讓容器用這個伺服器來解析所有不在 `/etc/hosts` 中的主機名。
 
 `--dns-search=DOMAIN`
-設定容器的搜索域，當設定搜索域為 `.example.com` 時，在搜索一個名為 host 的主機時，DNS 不僅搜索host，還會搜索 `host.example.com`。
+設定容器的搜尋域，當設定搜尋域為 `.example.com` 時，在搜尋一個名為 host 的主機時，DNS 不僅搜尋host，還會搜尋 `host.example.com`。
 注意：如果沒有上述最後 2 個選項，Docker 會預設用主機上的 `/etc/resolv.conf` 來設定容器。

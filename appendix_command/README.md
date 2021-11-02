@@ -140,7 +140,7 @@ Docker 的命令可以採用 `docker-CMD` 或者 `docker CMD` 的方式執行。
         保存一個映像檔為 tar 包檔案
 
     docker-search(1)
-        在 Docker index 中搜索一個映像檔
+        在 Docker index 中搜尋一個映像檔
 
     docker-start(1)
         啟動一個容器

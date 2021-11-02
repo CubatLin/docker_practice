@@ -10,7 +10,7 @@
 ### 基本操作
 
 使用者無需登錄即可透過 `docker search` 命令來查詢官方倉庫中的映像檔，並利用 `docker pull` 命令來將它下載到本地。
-例如以 centos 為關鍵字進行搜索：
+例如以 centos 為關鍵字進行搜尋：
 ```bash
 $ sudo docker search centos
 NAME                                            DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED

@@ -13,7 +13,7 @@
 
 下面2個命令選項既可以在啟動服務時指定，也可以 Docker 容器啟動（`docker run`）時候指定。在 Docker 服務啟動的時候指定則會成為預設值，後面執行 `docker run` 時可以覆蓋設定的預設值。
 * `--dns=IP_ADDRESS...` --使用指定的DNS伺服器
-* `--dns-search=DOMAIN...` --指定DNS搜索域
+* `--dns-search=DOMAIN...` --指定DNS搜尋域
 
 最後這些選項只有在 `docker run` 執行時使用，因為它是針對容器的特性內容。
 * `-h HOSTNAME or --hostname=HOSTNAME` --設定容器主機名
