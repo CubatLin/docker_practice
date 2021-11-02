@@ -15,7 +15,7 @@
    * [取得映像檔](image/pull.md)
    * [列出](image/list.md)
    * [建立](image/create.md)
-   * [存出和載入](image/save_load.md)
+   * [儲存和載入](image/save_load.md)
    * [移除](image/rmi.md)
    * [實作原理](image/internal.md)
 * [容器](container/README.md)
