@@ -20,7 +20,7 @@
    * [實作原理](image/internal.md)
 * [容器](container/README.md)
    * [啟動](container/run.md)
-   * [守護態執行](container/daemon.md)
+   * [常駐執行](container/daemon.md)
    * [終止](container/stop.md)
    * [進入容器](container/enter.md)
    * [匯出與匯入](container/import_export.md)
