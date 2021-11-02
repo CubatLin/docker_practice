@@ -8,7 +8,7 @@ $ sudo docker run -d ubuntu:14.04 /bin/sh -c "while true; do echo hello world; s
 1e5535038e285177d5214659a068137486f96ee5c2e85a4ac52dc83f2ebe4147
 ```
 
-容器啟動後會返回一個唯一的 id，也可以透過 `docker ps` 命令來查看容器訊息。
+容器啟動後會回傳一個唯一的 id，也可以透過 `docker ps` 命令來查看容器訊息。
 ```
 $ sudo docker ps
 CONTAINER ID  IMAGE         COMMAND               CREATED        STATUS       PORTS NAMES
