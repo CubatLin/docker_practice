@@ -12,7 +12,7 @@ net.ipv4.ip_forward = 1
 ```
 $sysctl -w net.ipv4.ip_forward=1
 ```
-如果在啟動 Docker 服務的時候設定 `--ip-forward=true`, Docker 就會自動設定系統的 `ip_forward` 參數為 1。
+如果在啟動 Docker 服務的時候設定 `--ip-forward=true` ， Docker 就會自動設定系統的 `ip_forward` 參數為 1。
 
 ### 容器之間存取
 容器之間相互存取，需要兩方面的支援。

@@ -1,5 +1,5 @@
 ## 其它安全特性
-除了能力機制之外，還可以利用一些現有的安全機制來增強使用 Docker 的安全性，例如 TOMOYO, AppArmor, SELinux, GRSEC 等。
+除了能力機制之外，還可以利用一些現有的安全機制來增強使用 Docker 的安全性，例如 TOMOYO 、 AppArmor 、 SELinux 、 GRSEC 等。
 
 Docker 當前預設只啟用了能力機制。使用者可以採用多種方案來加強 Docker 主機的安全，例如：
 * 在核心中啟用 GRSEC 和 PAX，這將增加很多編譯和執行時的安全檢查；透過位址隨機化避免惡意探測等。並且，啟用該特性不需要 Docker 進行任何設定。

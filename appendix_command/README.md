@@ -10,7 +10,7 @@
         使用 debug 模式。預設為 false。
 
     -H, --host=[unix:///var/run/docker.sock]: tcp://[host:port]來綁定或者 unix://[/path/to/socket] 來使用。
-        在 daemon 模式下綁定的 socket，透過一個或多個 tcp://host:port, unix:///path/to/socket, fd://* or fd://socketfd 來指定。
+        在 daemon 模式下綁定的 socket，透過一個或多個 tcp://host:port 、 unix:///path/to/socket 、 fd://* or fd://socketfd 來指定。
 
     --api-enable-cors=true|false
         在遠端 API 中啟用 CORS 頭。預設為 false。
@@ -95,7 +95,7 @@ Docker 的命令可以採用 `docker-CMD` 或者 `docker CMD` 的方式執行。
         顯示一個容器的底層具體資訊。
 
     docker-kill(1)
-        關閉一個執行中的容器 (包括程式和所有資源)
+        關閉一個執行中的容器（包括程式和所有資源）
 
     docker-load(1)
         從一個 tar 包中載入一個映像檔
