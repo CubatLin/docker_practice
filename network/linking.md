@@ -3,14 +3,14 @@
 
 該系統會在來源端容器和接收端容器之間創建一個隧道，接收端容器可以看到來源端容器指定的資訊。
 
-### 自定義容器命名
-連接系統依據容器的名稱來執行。因此，首先需要自定義一個好記的容器命名。
+### 自訂容器命名
+連接系統依據容器的名稱來執行。因此，首先需要自訂一個好記的容器命名。
 
-雖然當創建容器的時候，系統會預設分配一個名字。自定義命名容器有2個好處：
-* 自定義的命名，比較好記，比如一個web應用容器我們可以給它起名叫web
+雖然當創建容器的時候，系統會預設分配一個名字。自訂命名容器有2個好處：
+* 自訂的命名，比較好記，比如一個web應用容器我們可以給它起名叫web
 * 當要連接其他容器時候，可以作為一個有用的參考點，比如連接web容器到db容器
 
-使用 `--name` 標記可以為容器自定義命名。
+使用 `--name` 標記可以為容器自訂命名。
 ```bash
 $ sudo docker run -d -P --name web training/webapp python app.py
 ```
@@ -58,7 +58,7 @@ CONTAINER ID  IMAGE                     COMMAND               CREATED           
 349169744e49  training/postgres:latest  su postgres -c '/usr  About a minute ago  Up About a minute  5432/tcp                 db, web/db
 aed84ee21bde  training/webapp:latest    python app.py         16 hours ago        Up 2 minutes       0.0.0.0:49154->5000/tcp  web
 ```
-可以看到自定義命名的容器，db 和 web，db 容器的 names 列有 db 也有 web/db。這表示 web 容器連接到 db 容器，web 容器將被允許存取 db 容器的訊息。
+可以看到自訂命名的容器，db 和 web，db 容器的 names 列有 db 也有 web/db。這表示 web 容器連接到 db 容器，web 容器將被允許存取 db 容器的訊息。
 
 Docker 在兩個互聯的容器之間創建了一個安全隧道，而且不用映射它們的連接埠到宿主主機上。在啟動 db 容器的時候並沒有使用 `-p` 和 `-P` 標記，從而避免了暴露資料庫連接埠到外部網路上。
 

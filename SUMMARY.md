@@ -42,7 +42,7 @@
    * [容器存取控制](advanced_network/access_control.md)
    * [端口映射實作](advanced_network/port_mapping.md)
    * [設定 docker0 橋接器](advanced_network/docker0.md)
-   * [自定義橋接器](advanced_network/bridge.md)
+   * [自訂橋接器](advanced_network/bridge.md)
    * [工具與範例](advanced_network/example.md)
    * [編輯網路設定檔案](advanced_network/config_file.md)
    * [實例：創造一個點對點連接](advanced_network/ptp.md)

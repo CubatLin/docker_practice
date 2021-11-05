@@ -16,7 +16,7 @@ Docker 的 Registry 利用設定檔案提供了一些倉庫的模組（flavor）
 * `glance-swift`：儲存資料到 OpenStack Glance 服務，Swift 為後備
 * `elliptics`：儲存資料到 Elliptics key/value 儲存
 
-使用者也可以新增自定義的模版段。
+使用者也可以新增自訂的模版段。
 
 預設情況下使用的模組是 `dev`，要使用某個模組作為預設值，可以新增 `SETTINGS_FLAVOR` 到環境變數中，例如
 ```bash
