@@ -3,7 +3,7 @@
 
 使用者有時候需要兩個容器之間可以直連通信，而不用透過主機橋接器進行橋接。
 
-解決辦法很簡單：建立一對 `peer` 界面，分別放到兩個容器中，設定成點到點鏈路類型即可。
+解決辦法很簡單：建立一對 `peer` 介面，分別放到兩個容器中，設定成點到點鏈路類型即可。
 
 首先啟動 2 個容器：
 ```
@@ -24,7 +24,7 @@ $ sudo ln -s /proc/2989/ns/net /var/run/netns/2989
 $ sudo ln -s /proc/3004/ns/net /var/run/netns/3004
 ```
 
-建立一對 `peer` 界面，然後設定路由
+建立一對 `peer` 介面，然後設定路由
 ```
 $ sudo ip link add A type veth peer name B
 
