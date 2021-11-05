@@ -31,7 +31,7 @@
         指定 Docker 執行時的 root 路徑。預設為 /var/lib/docker。
 
     --icc=true|false
-        啟用容器間通信。預設為 true。
+        啟用容器間通訊。預設為 true。
 
     --ip=""
         綁定連接埠時候的預設 IP 位址。預設為 0.0.0.0。

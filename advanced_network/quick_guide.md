@@ -6,8 +6,8 @@
 * `-b BRIDGE or --bridge=BRIDGE` --指定容器掛載的橋接器
 * `--bip=CIDR` --定制 docker0 的遮罩
 * `-H SOCKET... or --host=SOCKET...` --Docker 服務端接收命令的通道
-* `--icc=true|false` --是否支援容器之間進行通信
-* `--ip-forward=true|false` --請看下文容器之間的通信
+* `--icc=true|false` --是否支援容器之間進行通訊
+* `--ip-forward=true|false` --請看下文容器之間的通訊
 * `--iptables=true|false` --禁止 Docker 新增 iptables 規則
 * `--mtu=BYTES` --容器網路中的 MTU
 
