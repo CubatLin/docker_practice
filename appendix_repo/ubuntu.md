@@ -1,7 +1,7 @@
 ## [Ubuntu](https://registry.hub.docker.com/_/ubuntu/)
 
 ### 基本訊息
-[Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) 是流行的 Linux 發行版，其內建軟件版本往往較新一些。
+[Ubuntu](https://en.wikipedia.org/wiki/Ubuntu) 是流行的 Linux 發行版，其內建軟體版本往往較新一些。
 該倉庫提供了 Ubuntu 從 12.04 ~ 14.10 各個版本的映像檔。
 
 ### 使用方法

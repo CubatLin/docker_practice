@@ -1,7 +1,7 @@
 ## [Node.js](https://registry.hub.docker.com/_/node/)
 
 ### 基本訊息
-[Node.js](https://en.wikipedia.org/wiki/Node.js)是基於 JavaScript 的可擴展服務端和網路軟件開發平台。
+[Node.js](https://en.wikipedia.org/wiki/Node.js)是基於 JavaScript 的可擴展服務端和網路軟體開發平台。
 該倉庫提供了 Node.js 0.8 ~ 0.11 各個版本的映像檔。
 
 ### 使用方法

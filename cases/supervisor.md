@@ -21,7 +21,7 @@ RUN mkdir -p /var/run/sshd
 RUN mkdir -p /var/log/supervisor
 ```
 
-這裡安裝 3 個軟件，還建立了 2 個 ssh 和 supervisor 服務正常執行所需要的目錄。
+這裡安裝 3 個軟體，還建立了 2 個 ssh 和 supervisor 服務正常執行所需要的目錄。
 ```
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ```
@@ -44,7 +44,7 @@ command=/usr/sbin/sshd -D
 [program:apache2]
 command=/bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"
 ```
-設定檔案包含目錄和程式，第一段 supervsord 設定軟件本身，使用 nodaemon 參數來執行。第二段包含要控制的 2 個服務。每一段包含一個服務的目錄和啟動這個服務的命令。
+設定檔案包含目錄和程式，第一段 supervsord 設定軟體本身，使用 nodaemon 參數來執行。第二段包含要控制的 2 個服務。每一段包含一個服務的目錄和啟動這個服務的命令。
 
 ### 使用方法
 建立映像檔。
