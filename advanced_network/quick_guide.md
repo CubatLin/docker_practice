@@ -17,7 +17,7 @@
 
 最後這些選項只有在 `docker run` 執行時使用，因為它是針對容器的特性內容。
 * `-h HOSTNAME or --hostname=HOSTNAME` --設定容器主機名
-* `--link=CONTAINER_NAME:ALIAS` --新增到另一個容器的連接
+* `--link=CONTAINER_NAME:ALIAS` --新增到另一個容器的連線
 * `--net=bridge|none|container:NAME_or_ID|host` --設定容器的橋接模式
 * `-p SPEC or --publish=SPEC` --映射容器連接埠到宿主主機
 * `-P or --publish-all=true|false` --映射容器所有連接埠到宿主主機

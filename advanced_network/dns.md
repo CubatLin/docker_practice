@@ -19,7 +19,7 @@ tmpfs on /etc/resolv.conf type tmpfs ...
 設定容器的主機名，它會被寫到容器內的 `/etc/hostname` 和 `/etc/hosts`。但它在容器外部看不到，既不會在 `docker ps` 中顯示，也不會在其他的容器的 `/etc/hosts` 看到。
 
 `--link=CONTAINER_NAME:ALIAS`
-選項會在建立容器的時候，新增一個其他容器的主機名到 `/etc/hosts` 檔案中，讓新容器的程式可以使用主機名 ALIAS 就可以連接它。
+選項會在建立容器的時候，新增一個其他容器的主機名到 `/etc/hosts` 檔案中，讓新容器的程式可以使用主機名 ALIAS 就可以連線它。
 
 `--dns=IP_ADDRESS`
 新增 DNS 伺服器到容器的 `/etc/resolv.conf` 中，讓容器用這個伺服器來解析所有不在 `/etc/hosts` 中的主機名。

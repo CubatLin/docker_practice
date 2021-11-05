@@ -11,7 +11,7 @@ $ sudo docker run --name some-wordpress --link some-mysql:mysql -d wordpress
 ```
 啟動 WordPress 容器時可以指定的一些環境參數包括
 * `-e WORDPRESS_DB_USER=...` 預設為 “root”
-* `-e WORDPRESS_DB_PASSWORD=...` 預設為連接 mysql 容器的環境變量 `MYSQL_ROOT_PASSWORD` 的值
+* `-e WORDPRESS_DB_PASSWORD=...` 預設為連線 mysql 容器的環境變量 `MYSQL_ROOT_PASSWORD` 的值
 * `-e WORDPRESS_DB_NAME=...` 預設為 “wordpress”
 * `-e WORDPRESS_AUTH_KEY=...`, `-e WORDPRESS_SECURE_AUTH_KEY=...`, `-e WORDPRESS_LOGGED_IN_KEY=...`, `-e WORDPRESS_NONCE_KEY=...`, `-e WORDPRESS_AUTH_SALT=...`, `-e WORDPRESS_SECURE_AUTH_SALT=...`, `-e WORDPRESS_LOGGED_IN_SALT=...`, `-e WORDPRESS_NONCE_SALT=...` 預設為隨機 SHA1 串
 

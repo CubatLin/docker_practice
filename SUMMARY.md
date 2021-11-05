@@ -45,7 +45,7 @@
    * [自訂橋接器](advanced_network/bridge.md)
    * [工具與範例](advanced_network/example.md)
    * [編輯網路設定檔案](advanced_network/config_file.md)
-   * [實例：創造一個點對點連接](advanced_network/ptp.md)
+   * [實例：創造一個點對點連線](advanced_network/ptp.md)
 * [實戰案例](cases/README.md)
    * [使用 Supervisor 來管理程式](cases/supervisor.md)
    * [建立 tomcat/weblogic 集群](cases/tomcat.md)

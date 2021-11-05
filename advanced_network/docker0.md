@@ -6,7 +6,7 @@ Docker 預設指定了 `docker0` 介面 的 IP 位址和子網遮罩，讓主機
 * `--mtu=BYTES` -- 覆蓋預設的 Docker mtu 設定
 
 也可以在設定檔案中設定 DOCKER_OPTS，然後重啟服務。
-由於目前 Docker 橋接器是 Linux 橋接器，使用者可以使用 `brctl show` 來查看橋接器和連接埠連接訊息。
+由於目前 Docker 橋接器是 Linux 橋接器，使用者可以使用 `brctl show` 來查看橋接器和連接埠連線訊息。
 ```
 $ sudo brctl show
 bridge name     bridge id               STP enabled     interfaces

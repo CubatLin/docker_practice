@@ -9,7 +9,7 @@
 ```
 $ sudo docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword -d mysql
 ```
-之後就可以使用其它應用來連接到該容器。
+之後就可以使用其它應用來連線到該容器。
 ```
 $ sudo docker run --name some-app --link some-mysql:mysql -d application-that-uses-mysql
 ```
