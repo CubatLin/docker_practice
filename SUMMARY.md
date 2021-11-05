@@ -40,7 +40,7 @@
    * [快速設定指南](advanced_network/quick_guide.md)
    * [設定 DNS](advanced_network/dns.md)
    * [容器存取控制](advanced_network/access_control.md)
-   * [端口映射實作](advanced_network/port_mapping.md)
+   * [埠號映射實作](advanced_network/port_mapping.md)
    * [設定 docker0 橋接器](advanced_network/docker0.md)
    * [自訂橋接器](advanced_network/bridge.md)
    * [工具與範例](advanced_network/example.md)
