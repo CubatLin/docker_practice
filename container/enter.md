@@ -26,7 +26,7 @@ root@243c32535da7:/#
 
 按下 `ctrl` + `P` 然後 `ctrl` + `Q` 跳離容器，讓它繼續在背景執行。
   
-但是使用 `attach` 命令有時候並不方便。當多個窗口同時 attach 到同一個容器的時候，所有窗口都會同步顯示。當某個窗口因命令阻塞時,其他窗口也無法執行操作了。
+但是使用 `attach` 命令有時候並不方便。當多個視窗同時 attach 到同一個容器的時候，所有視窗都會同步顯示。當某個視窗因命令阻塞時,其他視窗也無法執行操作了。
 
 ### nsenter 命令
 #### 安裝
@@ -47,11 +47,11 @@ $ cd util-linux-2.24
 $ ./configure --without-ncurses && make nsenter
 $ sudo cp nsenter /usr/local/bin
 ```
-為了連接到容器，你還需要找到容器的第一個程式的 PID，可以透過下面的命令取得。
+為了連線到容器，你還需要找到容器的第一個程式的 PID，可以透過下面的命令取得。
 ```
 PID=$(docker inspect --format "{{ .State.Pid }}" <container>)
 ```
-透過這個 PID，就可以連接到這個容器：
+透過這個 PID，就可以連線到這個容器：
 ```
 $ nsenter --target $PID --mount --uts --ipc --net --pid
 ```

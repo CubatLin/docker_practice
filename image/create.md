@@ -19,7 +19,7 @@ root@0b2616b0e5a8:/# gem install json
 $ sudo docker commit -m "Added json gem" -a "Docker Newbee" 0b2616b0e5a8 ouruser/sinatra:v2
 4f177bd27a9ff0f6dc2a830403925b5360bfe0b93d476f7fc3231110e7f71b1c
 ```
-其中，`-m` 指定提交的說明信息，跟我們使用的版本控制工具一樣；`-a` 可以指定更新的使用者信息；之後是用來建立映像檔的容器的 ID；最後指定新映像檔的名稱和 tag 。建立成功後會印出新映像檔的 ID。
+其中，`-m` 指定提交的說明資訊，跟我們使用的版本控制工具一樣；`-a` 可以指定更新的使用者資訊；之後是用來建立映像檔的容器的 ID；最後指定新映像檔的名稱和 tag 。建立成功後會印出新映像檔的 ID。
 
 
 使用 `docker images` 查看新建立的映像檔。
@@ -58,7 +58,7 @@ RUN gem install sinatra
 Dockerfile 基本的語法是
 * 使用`#`來註釋
 * `FROM` 指令告訴 Docker 使用哪個映像檔作為基底
-* 接著是維護者的信息
+* 接著是維護者的資訊
 * `RUN`開頭的指令會在建立中執行，比如安裝一個套件，在這裏使用 apt-get 來安裝了一些套件
 
 完成 Dockerfile 後可以使用 `docker build` 建立映像檔。
@@ -97,11 +97,11 @@ Successfully installed sinatra-1.4.5
 Removing intermediate container 5e9d0065c1f7
 Successfully built 324104cde6ad
 ```
-其中 `-t` 標記添加 tag，指定新的映像檔的使用者信息。
+其中 `-t` 標記添加 tag，指定新的映像檔的使用者資訊。
 “.” 是 Dockerfile 所在的路徑（當前目錄），也可以換成具體的 Dockerfile 的路徑。
 
 可以看到 build 指令後執行的操作。它要做的第一件事情就是上傳這個 Dockerfile 內容，因為所有的操作都要依據 Dockerfile 來進行。
-然後，Dockfile 中的指令被一條一條的執行。每一步都建立了一個新的容器，在容器中執行指令並提交修改（就跟之前介紹過的 `docker commit` 一樣）。當所有的指令都執行完畢之後，返回了最終的映像檔 id。所有的中間步驟所產生的容器都會被刪除和清理。
+然後，Dockfile 中的指令被一條一條的執行。每一步都建立了一個新的容器，在容器中執行指令並提交修改（就跟之前介紹過的 `docker commit` 一樣）。當所有的指令都執行完畢之後，回傳了最終的映像檔 id。所有的中間步驟所產生的容器都會被刪除和清理。
 
 *注意一個映像檔不能超過 127 層
 

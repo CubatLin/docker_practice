@@ -1,6 +1,6 @@
 ## 建立 tomcat/weblogic 集群
 ### 安裝 tomcat 映像檔
-準備好需要的 jdk、tomcat 等軟件放到 home 目錄下面，啟動一個容器
+準備好需要的 jdk、tomcat 等軟體放到 home 目錄下面，啟動一個容器
 ```
 docker run -t -i -v /home:/opt/data  --name mk_tomcat ubuntu /bin/bash
 ```

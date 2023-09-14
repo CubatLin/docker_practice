@@ -14,7 +14,7 @@ $ sudo docker run --name some-redis -d redis redis-server --appendonly yes
 ```
 預設資料儲存位置在 `VOLUME/data`。可以使用 `--volumes-from some-volume-container` 或 `-v /docker/host/dir:/data` 將資料存放到本地。
 
-使用其他應用連接到容器，可以用
+使用其他應用連線到容器，可以用
 ```
 $ sudo docker run --name some-app --link some-redis:redis -d application-that-uses-redis
 ```

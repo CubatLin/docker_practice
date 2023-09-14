@@ -10,7 +10,7 @@
 ### 基本操作
 
 使用者無需登錄即可透過 `docker search` 命令來查詢官方倉庫中的映像檔，並利用 `docker pull` 命令來將它下載到本地。
-例如以 centos 為關鍵字進行搜索：
+例如以 centos 為關鍵字進行搜尋：
 ```bash
 $ sudo docker search centos
 NAME                                            DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
@@ -50,7 +50,7 @@ Pulling repository centos
 
 要設定自動建立，包括以下的步驟：
 * 建立並登陸 Docker Hub，以及目標網站；
-* 在目標網站中連接帳戶到 Docker Hub；
+* 在目標網站中連結帳戶到 Docker Hub；
 * 在 Docker Hub 中 [設定一個自動建立](https://registry.hub.docker.com/builds/add/)；
 * 選取一個目標網站中的專案（需要含 Dockerfile）和分支；
 * 指定 Dockerfile 的位置，並提交建立。

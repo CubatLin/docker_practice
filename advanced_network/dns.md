@@ -1,5 +1,5 @@
 ## 設定 DNS
-Docker 沒有為每個容器專門定制映像檔，那麽怎麽自定義設定容器的主機名和 DNS 設定呢？
+Docker 沒有為每個容器專門定制映像檔，那麽怎麽自訂設定容器的主機名和 DNS 設定呢？
 秘訣就是它利用虛擬檔案來掛載到來容器的 3 個相關設定檔案。
 
 在容器中使用 mount 命令可以看到掛載訊息：
@@ -19,11 +19,11 @@ tmpfs on /etc/resolv.conf type tmpfs ...
 設定容器的主機名，它會被寫到容器內的 `/etc/hostname` 和 `/etc/hosts`。但它在容器外部看不到，既不會在 `docker ps` 中顯示，也不會在其他的容器的 `/etc/hosts` 看到。
 
 `--link=CONTAINER_NAME:ALIAS`
-選項會在建立容器的時候，新增一個其他容器的主機名到 `/etc/hosts` 檔案中，讓新容器的程式可以使用主機名 ALIAS 就可以連接它。
+選項會在建立容器的時候，新增一個其他容器的主機名到 `/etc/hosts` 檔案中，讓新容器的程式可以使用主機名 ALIAS 就可以連線它。
 
 `--dns=IP_ADDRESS`
 新增 DNS 伺服器到容器的 `/etc/resolv.conf` 中，讓容器用這個伺服器來解析所有不在 `/etc/hosts` 中的主機名。
 
 `--dns-search=DOMAIN`
-設定容器的搜索域，當設定搜索域為 `.example.com` 時，在搜索一個名為 host 的主機時，DNS 不僅搜索host，還會搜索 `host.example.com`。
+設定容器的搜尋域，當設定搜尋域為 `.example.com` 時，在搜尋一個名為 host 的主機時，DNS 不僅搜尋host，還會搜尋 `host.example.com`。
 注意：如果沒有上述最後 2 個選項，Docker 會預設用主機上的 `/etc/resolv.conf` 來設定容器。

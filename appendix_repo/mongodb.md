@@ -10,7 +10,7 @@
 $ sudo docker run --name some-mongo -d mongo
 ```
 
-使用其他應用連接到容器，可以用
+使用其他應用連線到容器，可以用
 ```
 $ sudo docker run --name some-app --link some-mongo:mongo -d application-that-uses-mongo
 ```

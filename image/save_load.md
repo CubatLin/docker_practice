@@ -19,4 +19,4 @@ $ sudo docker load --input ubuntu_14.04.tar
 ```
 $ sudo docker load < ubuntu_14.04.tar
 ```
-這將匯入映像檔以及其相關的元資料信息（包括標籤等）。
+這將匯入映像檔以及其相關的元資料資訊（包括標籤等）。
