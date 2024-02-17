@@ -1,16 +1,17 @@
 ## Docker Hub
 
-目前 Docker 官方維護了一個公共倉庫 [Docker Hub](https://hub.docker.com/)，其中已經包括了超過 15,000 的映像檔。大部分需求，都可以透過在 Docker Hub 中直接下載映像檔來實作。
+目前 Docker 官方維護了一個公共倉庫 [Docker Hub](https://hub.docker.com/)，其中已經包括了超過 15,000 的映像檔。大部分需求都可以透過在 Docker Hub 中直接下載映像檔來實作。
 
 ### 登錄
 
-* 可以透過執行 `docker login` 命令來輸入使用者名稱、密碼和電子信箱來完成註冊和登錄。
-* 註冊成功後，本地使用者目錄的 `.dockercfg` 中將保存使用者的認證訊息。
+- 可以透過執行 `docker login` 命令來輸入使用者名稱、密碼和電子信箱來完成註冊和登錄。
+- 註冊成功後，本地使用者目錄的 `.dockercfg` 中將保存使用者的認證訊息。
 
 ### 基本操作
 
 使用者無需登錄即可透過 `docker search` 命令來查詢官方倉庫中的映像檔，並利用 `docker pull` 命令來將它下載到本地。
 例如以 centos 為關鍵字進行搜尋：
+
 ```bash
 $ sudo docker search centos
 NAME                                            DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
@@ -21,6 +22,7 @@ saltstack/centos-6-minimal                                                      
 tutum/centos-6.4                                DEPRECATED. Use tutum/centos:6.4 instead. ...   5                    [OK]
 ...
 ```
+
 可以看到顯示了很多包含關鍵字的映像檔，其中包括映像檔名字、描述、星級（表示該映像檔的受歡迎程度）、是否官方建立、是否自動建立。
 官方的映像檔說明是官方專案組建立和維護的，automated 資源允許使用者驗證映像檔的來源和內容。
 
@@ -31,6 +33,7 @@ tutum/centos-6.4                                DEPRECATED. Use tutum/centos:6.4
 另外，在查詢的時候透過 `-s N` 參數可以指定僅顯示評價為 `N` 星以上的映像檔。
 
 下載官方 centos 映像檔到本地。
+
 ```bash
 $ sudo docker pull centos
 Pulling repository centos
@@ -39,6 +42,7 @@ Pulling repository centos
 511136ea3c5a: Download complete
 7064731afe90: Download complete
 ```
+
 使用者也可以在登錄後透過 `docker push` 命令來將映像檔推送到 Docker Hub。
 
 ### 自動建立
@@ -49,10 +53,11 @@ Pulling repository centos
 而自動建立允許使用者透過 Docker Hub 指定跟蹤一個目標網站（目前支援 [GitHub](github.org) 或 [BitBucket](bitbucket.org)）上的專案，一旦專案發生新的提交，則自動執行建立。
 
 要設定自動建立，包括以下的步驟：
-* 建立並登陸 Docker Hub，以及目標網站；
-* 在目標網站中連結帳戶到 Docker Hub；
-* 在 Docker Hub 中 [設定一個自動建立](https://registry.hub.docker.com/builds/add/)；
-* 選取一個目標網站中的專案（需要含 Dockerfile）和分支；
-* 指定 Dockerfile 的位置，並提交建立。
+
+- 建立並登陸 Docker Hub，以及目標網站；
+- 在目標網站中連結帳戶到 Docker Hub；
+- 在 Docker Hub 中 [設定一個自動建立](https://registry.hub.docker.com/builds/add/)；
+- 選取一個目標網站中的專案（需要含 Dockerfile）和分支；
+- 指定 Dockerfile 的位置，並提交建立。
 
 之後，可以 在Docker Hub 的 [自動建立頁面](https://registry.hub.docker.com/builds/) 中跟蹤每次建立的狀態。
