@@ -1,13 +1,14 @@
 # Docker命令查詢
 
-##基本語法
-    docker [OPTIONS] COMMAND [arg...]
+## 基本語法
+
+docker [OPTIONS] COMMAND [arg...]
 一般來說，Docker 命令可以用來管理 daemon，或者透過 CLI 命令管理映像檔和容器。可以透過 `man docker` 來查看這些命令。
 
+## 選項
 
-##選項
-    -D=true|false
-        使用 debug 模式。預設為 false。
+-D=true|false
+使用 debug 模式。預設為 false。
 
     -H, --host=[unix:///var/run/docker.sock]: tcp://[host:port]來綁定或者 unix://[/path/to/socket] 來使用。
         在 daemon 模式下綁定的 socket，透過一個或多個 tcp://host:port 、 unix:///path/to/socket 、 fd://* or fd://socketfd 來指定。
@@ -54,8 +55,8 @@
     --selinux-enabled=true|false
         啟用 SELinux 支援。預設值為 false。SELinux 目前不支援 BTRFS 儲存驅動。
 
+## 命令
 
-##命令
 Docker 的命令可以採用 `docker-CMD` 或者 `docker CMD` 的方式執行。兩者一致。
 
     docker-attach(1)
