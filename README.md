@@ -18,6 +18,7 @@ v0.2.9
 
 
 本書原始碼在 Github 上維護，歡迎參與： [https://github.com/philipz/docker_practice](https://github.com/philipz/docker_practice)。
+Docker繁體中文介紹連結：[https://philipzheng.gitbook.io/docker_practice]。
 
 感謝所有的 [貢獻者](https://github.com/philipz/docker_practice/graphs/contributors)。
 
